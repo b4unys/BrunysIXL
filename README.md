@@ -19,3 +19,5 @@ Feel free to explore and have fun gaming!
 ## -bruny
 in brunysixl we trust
 
+official extra links here: https://sites.google.com/view/bruny
+
