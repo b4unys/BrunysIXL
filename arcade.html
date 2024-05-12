@@ -1,0 +1,972 @@
+<title>IXL | Activities</title>
+<link rel="icon" href="/assets/brunysixlfavicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/brunysixlfavicon.png" type="image/x-icon">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+</style>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         body {
+        margin: 15;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+     }
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        nav img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+        nav img:hover {
+            transform: translateY(-5px);
+        }
+        .nav-buttons {
+            display: flex;
+            justify-content: flex-end;
+            list-style-type: none;
+            margin: 0;
+            padding: 30px;
+        }
+        .nav-buttons li {
+            margin-left: 10px;
+        }
+        .nav-buttons a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 10px;
+            border-radius: 5px;
+            background-color: #222324;
+            transition: background-color 0.3s;
+        }
+        .nav-buttons a:hover {
+            background-color: #555;
+        }
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: -1;
+        }
+        .container {
+            position: relative;
+            margin-top: 70px;
+            text-align: center;
+            color: #fff;
+        }
+        h1 {
+        	margin-top: 110px;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 0 0 20px #fff;
+        }
+        .blank-button {
+        padding: 13px 23px;
+        background-color: #000;
+        color: #fff;
+        border: 2px solid #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        margin-left: 10px;
+        transition: transform 0.3s, filter 0.3s;
+    }
+    .blank-button:hover {
+    transform: scale(1.1);
+    filter: invert(1);
+}
+      hr {
+            border: none;
+            border-top: 2px solid white; 
+            margin: 15px auto; 
+            width: 50%; 
+            height: 1px; 
+            border-radius: 5px; 
+        }
+	    .image-container {
+            position: relative;
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .image-container img {
+            width: 110px;
+            height: 110px;
+            border: 3px solid white;
+            border-radius: 10px;
+            transition: transform 0.1s, filter 0.1s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+            filter: brightness(80%);
+        }
+
+        
+        #iframe-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 9998;
+            display: none;
+        }
+
+        #iframe-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            background-color: #000;
+            padding: 20px;
+            display: none;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+        #iframe {
+            width: 800px;
+            height: 450px;
+            border: none;
+            border: 2px solid white;
+            border-radius: 10px;
+        }
+
+         #close-container {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            transform: translateY(50%);
+        }
+
+        #close-button {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #000;
+            color: white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: transform 0.3s, filter 0.3s;
+        }
+        
+        #close-button:hover {
+        	transform: scale(1.1);
+            filter: brightness(80%);
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/"><img src="/assets/brunysixlgiflogo.gif" alt="Logo"></a>
+        <ul class="nav-buttons">
+            <li><a href="/arcade.html">Arcade</a></li>
+            <li><a href="/proxy.html">Proxy</a></li>
+            <li><a href="/bookmarklets.html">Bookmarklets</a></li>
+            <li><a href="/emulators.html">Emulators</a></li>
+            <li><a href="/apps.html">Apps</a></li>
+            <li><a href="/extra.html">Extra</a></li>
+        </ul>
+    </nav>
+
+    <div id="particles-js"></div>
+
+  <div class="content">
+
+	  <h1>BrunysIXL.</h1>
+        <h5>Our Awesome Arcade with over 130+ games!</h5>
+	  <hr>
+	  
+   <div id="game-loader"></div>
+    
+    <div class="image-container" data-url="https://explo4er.basualdo.cl/embed?search=https://shuttle.lol/apps/roblox-corporation/5349/roblox.html">
+        <img src="https://sage-genie-fd8510.netlify.app/extragames/unnamed (8).png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+       <div class="image-container" data-url="https://explo4er.basualdo.cl/embed?search=https://shuttle.lol/apps/electronic-arts/1353/ea-sports-fc-mobile-24-soccer.html">
+        <img src="https://sage-genie-fd8510.netlify.app/extragames/42017345-2b5e-4a04-b352-ada9aa174c03-profile_image-300x300.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/slope/">
+        <img src="https://brunyshtmlgames.netlify.app/slope/slope4.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunyshtmlgames.netlify.app/subway-surfers/">
+        <img src="https://brunyshtmlgames.netlify.app/subway-surfers/img/FirstAvatar.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/flappy/">
+        <img src="https://sage-genie-fd8510.netlify.app/Flappy_Bird_icon.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papaspizzaria/">
+        <img src="https://brunyshtmlgames.netlify.app/papaspizzaria/papaspizzaria.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papasburgeria/">
+        <img src="https://sage-genie-fd8510.netlify.app/original.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/sm64/">
+        <img src="https://sage-genie-fd8510.netlify.app/images%20(11).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/run3/">
+        <img src="https://brunyshtmlgames.netlify.app/run3/favicon.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/bitlife/">
+        <img src="https://brunyshtmlgames.netlify.app/bitlife/logo.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/crossy/">
+        <img src="https://brunyshtmlgames.netlify.app/crossyroad/crossyroad.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://cralosunblockedispeak.netlify.app/projects/minecraft-18/game">
+        <img src="https://sage-genie-fd8510.netlify.app/minecraftlol.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/cookieclicker/">
+        <img src="https://brunyshtmlgames.netlify.app/cookieclicker/img/perfectCookie.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/templerun2/">
+        <img src="https://brunyshtmlgames.netlify.app/temple-run-2/079dea52d8f43464bedd59bc35cc7999.jpg" alt="Clickable Image">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/ducklife4/">
+        <img src="https://brunyshtmlgames.netlify.app/ducklife4/splash.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/dinogame/">
+        <img src="https://brunyshtmlgames.netlify.app/dino/images/default_100_percent/offline/100-error-offline.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/jetpackjoyride/">
+        <img src="https://sage-genie-fd8510.netlify.app/IMG_4809.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/retrobowl/">
+        <img src="https://brunyshtmlgames.netlify.app/retrobowl/retro-bowl-main/img/icon.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fruitninja/">
+        <img src="https://brunyshtmlgames.netlify.app/fruitninja/FruitNinjaTeaser.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/doodlejump/">
+        <img src="https://brunyshtmlgames.netlify.app/doodle-jump/doodle.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/2048/">
+        <img src="https://brunyshtmlgames.netlify.app/2048/2048.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/tetris/">
+        <img src="https://brunyshtmlgames.netlify.app/tetris/media/background/logo.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fancypantsadventure/">
+        <img src="https://brunyshtmlgames.netlify.app/fancypantsadventures/fancypantsadventure.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/happywheels/">
+        <img src="https://sage-genie-fd8510.netlify.app/49153773fb3cdbdd9f7de09684b9e749.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papashotdoggeria/">
+        <img src="https://sage-genie-fd8510.netlify.app/unnamed (5).png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/paperio2/">
+        <img src="https://brunyshtmlgames.netlify.app/paperio2/images/icon192.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/tunnelrush/">
+        <img src="https://brunyshtmlgames.netlify.app/tunnel-rush/img/tunnel.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/themehotel/">
+        <img src="https://sage-genie-fd8510.netlify.app/IMG_4806.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/escapingtheprison/">
+        <img src="https://brunyshtmlgames.netlify.app/escapingtheprison/escapingtheprison.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/stealingthediamond/">
+        <img src="https://brunyshtmlgames.netlify.app/stealingthediamond/stealingthediamond.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/infiltratingtheairship/">
+        <img src="https://sage-genie-fd8510.netlify.app/IMG_4811.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fleeingthecomplex/">
+        <img src="https://sage-genie-fd8510.netlify.app/image_2024-04-26_171449640.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/theimpossiblequiz/">
+        <img src="https://sage-genie-fd8510.netlify.app/impossiblequiz.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/solitaire/">
+        <img src="https://brunyshtmlgames.netlify.app/solitaire/screen-shot.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/drifthunters/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/IMG_3715.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/vex6/">
+        <img src="https://brunyshtmlgames.netlify.app/vex6/assets/icon.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/amongus/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/images (15).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/surf/">
+        <img src="https://brunyshtmlgames.netlify.app/edge-surf/splash.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://cralosunblockedispeak.netlify.app/projects/motox3m/game.html">
+        <img src="https://brunyshtmlgames.netlify.app/motox3m/splash.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fnaf/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/Screenshot 2024-04-26 175759.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fnaf-2/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/Screenshot 2024-04-26 175806.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fnaf-3/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/Screenshot 2024-04-26 175811.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fnaf-4/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/Screenshot 2024-04-26 175823.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/riddleschool/riddleschool1/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/riddleschool.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/riddleschool/riddleschool2/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/riddleschool2.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/riddleschool/riddleschool3/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/riddleschool3.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/riddleschool/riddleschool4/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/riddleschool4.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/riddleschool/riddleschool5/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/riddleschool5.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/riddleschool/riddletransfer/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/riddletransfer.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/riddleschool/riddletransfer2/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/riddletransfer2.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/driftboss/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/images (16).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fnf/">
+        <img src="https://brunyshtmlgames.netlify.app/fridaynightfunkin/fnf-icon.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/pacman/">
+        <img src="https://brunyshtmlgames.netlify.app/pacman/favicon.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papaspancakeria/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnGiy-WRSQyA--hkEDNc22DIBNi__YZlQsBB-jdPHi9KxhTUOR" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/rooftop/">
+        <img src="https://brunyshtmlgames.netlify.app/rooftop-snipers/img/thumb.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/baldisbasics/">
+        <img src="https://brunyshtmlgames.netlify.app/baldis-basics/icon.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/bobtherobber2/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/images (18).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/minesweeper/">
+        <img src="https://brunyshtmlgames.netlify.app/minesweeper/img/minesweeper.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/pokemonemerald/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/375px-Emerald_EN_boxart.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/pokemonfirered/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/375px-FireRed_EN_boxart.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supermariobros/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/71OWWCZNouL._AC_UF1000,1000_QL80_.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+    
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supermariokart/">
+        <img src="https://sage-genie-fd8510.netlify.app/sequals/SMK.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supermarioworld/">
+        <img src="https://brunyshtmlgames.netlify.app/webretro/thumb/super-mario-world.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/thereisnogame/">
+        <img src="https://brunyshtmlgames.netlify.app/there-is-no-game/logo.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/worldshardestgame/">
+        <img src="https://brunyshtmlgames.netlify.app/worlds-hardest-game/images/splash.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/castlevania/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Screenshot 2024-04-26 185132.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/donkeykong/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/donkey-kong-arcade-screen-bentgirders.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/drmario/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/images (19).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/metroid/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Metroid_--_Zero_Mission_(box_art).jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supermariobros2/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Super_Mario_Bros_2.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supermariobros3/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Super_Mario_Bros._3_coverart.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/thelegendofzelda/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/zelda1-1638920697847.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/warioware/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/61w-mhsGfpL.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/yoshisisland/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Yoshi's_Island_(Super_Mario_World_2)_box_art.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/donkeykongland/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/dk_island_by_hugo_h2p_ddau4os-fullview.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/kirbysdreamland/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Kirbys-dream-land-gameboy-boxart.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supermarioland/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/images (20).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/dogeminer/">
+        <img src="https://brunyshtmlgames.netlify.app/DogeMiner/img/dogecoin-d.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/tanukisunset/">
+        <img src="https://brunyshtmlgames.netlify.app/tanuki-sunset/img/logo.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/aquaparkslides/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/unnamed (6).png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/colorswitch/">
+        <img src="https://brunyshtmlgames.netlify.app/color-switch-2-challenges/icon.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papasfreezeria/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/unnamed (7).png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/btd/btd/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Screenshot 2024-04-26 185757.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/btd/btd2/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Screenshot 2024-04-26 185806.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/btd/btd3/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Screenshot 2024-04-26 185812.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/btd/btd4/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Screenshot 2024-04-26 185818.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/bomberman/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/dfdh57y-25b5b448-6924-42a0-b65b-d462cc77e896.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fireemblem/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/GBA_Fire_Emblem_Box.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/iceclimber/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/6.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/mariokartsupercircuit/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/images (21).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/pokemonleafgreen/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/images (22).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/pokemonruby/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/Ruby_EN_boxart.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/pokemonsapphire/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/sapphire-large.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/superstarsaga/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/MarioAndLuigiSuperstarSagaGBACoverArtUS.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/adofai/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/3obYu4Lq_400x400.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supermeatboy/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/SuperMeatBoy_cover.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/supersmashflash/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/images (23).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/stickmanhook/">
+        <img src="https://sage-genie-fd8510.netlify.app/mostlyretro/stickman-hook.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://scratch.mit.edu/projects/897522659/embed">
+        <img src="https://sage-genie-fd8510.netlify.app/extragames/Screenshot 2024-04-26 192337.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://cralosunblockedispeak.netlify.app/projects/awesome-tanks-2/game.html">
+        <img src="https://sage-genie-fd8510.netlify.app/extragames/Screenshot 2024-04-26 192350.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunyshtmlgames.netlify.app/racer/">
+        <img src="https://sage-genie-fd8510.netlify.app/extragames/Screenshot 2024-04-26 192403.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://cralosunblockedispeak.netlify.app/projects/soccer-skills/game">
+        <img src="https://sage-genie-fd8510.netlify.app/extragames/image_2024-04-26_192735212.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://sprightly-conkies-e60844.netlify.app">
+        <img src="https://sage-genie-fd8510.netlify.app/totm.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/slope2/">
+        <img src="https://sage-genie-fd8510.netlify.app/slope-2.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://cralosunblockedispeak.netlify.app/projects/1v1-soccer/game">
+        <img src="https://cralosunblockedispeak.netlify.app/projects/1v1-soccer/logo.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://cralosunblockedispeak.netlify.app/projects/soccer-random/game">
+        <img src="https://cralosunblockedispeak.netlify.app/projects/soccer-random/unnamed.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/gunmayhem/">
+        <img src="https://sage-genie-fd8510.netlify.app/images (14).jpeg" alt="Clickable Image" onclick="openIframe(this)"> </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/gunmayhem2/">
+        <img src="https://sage-genie-fd8510.netlify.app/images (13).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+     <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/gunmayhemredux/">
+        <img src="https://sage-genie-fd8510.netlify.app/images (12).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/rocketsoccer/">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+    <div class="image-container" data-url="https://brunysixlgames.netlify.app/games/basketbrosio/">
+        <img src="https://sage-genie-fd8510.netlify.app/Sport/IMG_4826.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/justfalllol/">
+        <img src="https://sage-genie-fd8510.netlify.app/everyoneknowsthat/unnamed (5).png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/defendthetank/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/8a023a084f0b457eb7508614457311bf-512x512.jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/sortthecourt/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/images (18).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/thisistheonlylevel/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (38).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/run/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (39).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/run2/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (40).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/battleships/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (41).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/breakingthebank/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (9).png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/ducklife/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (43).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/ducklife2/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (42).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/ducklife3/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (44).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/linerider/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (10).png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/mariocombat/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (45).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/raftwars2/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (46).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/spaceinvaders/">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/20/SpaceInvaders-Gameplay.gif" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/animalcrossingwildworld/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/Animal_Crossing_Wild_World_cover.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/mariokartds/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/71gOGWdJFYL.jpg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/newsupermariobros/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (47).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/nintendogs/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (48).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/sm64ds/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (49).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/learntofly/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (50).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/rooftop2/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (51).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/fireboywatergirl/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (52).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/chibiknight/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (53).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/clusterrush/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (54).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/doodledefender/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (55).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/learntofly2/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (56).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papasscooperia/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (57).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papassushiria/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (58).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/papaswingeria/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (59).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/raftwars/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (60).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/unfairmario/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (61).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	<div class="image-container" data-url="https://brunysixlgames.netlify.app/games/boxingphysics2/">
+        <img src="https://sage-genie-fd8510.netlify.app/UlteriorMotives/download (62).jpeg" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	  <div class="image-container" data-url="https://frogiesarcade-u7gj.onrender.com/compiled/1v1.hacks/">
+        <img src="https://sage-genie-fd8510.netlify.app/frogiesaracde1v1lolhacked/FDftiXwH_400x400.png" alt="Clickable Image" onclick="openIframe(this)">
+    </div>
+
+	
+    
+    <div id="iframe-overlay"></div>
+    <div id="iframe-container">
+        <iframe id="iframe"></iframe>
+        <div id="close-container">
+            <div id="close-button" onclick="closeIframe()">X</div>
+        </div>
+    </div>
+    
+    <script>
+        function loadGame() {
+            document.getElementById('game-loader').innerText = 'Loading game...';
+            setTimeout(() => {
+                document.getElementById('game-loader').innerText = 'Game loaded!';
+            }, 2000);
+        }
+
+        function openIframe(element) {
+            var url = element.parentNode.getAttribute('data-url');
+            document.getElementById('iframe-overlay').style.display = 'block';
+            document.getElementById('iframe-container').style.display = 'block';
+            document.getElementById('iframe').src = url;
+        }
+
+        function closeIframe() {
+            document.getElementById('iframe-overlay').style.display = 'none';
+            document.getElementById('iframe-container').style.display = 'none';
+            document.getElementById('iframe').src = 'about:blank'; 
+        }
+    </script>
+    
+ <hr>
+     <a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter7.optistats.ovh/private/freecounterstat.php?c=cx88tzmqauk43lts3flwb7zql1tqg946" border="0" title="web counter" alt="web counter"></a>
+    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#ffffff"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '1212536662043791450',
+    channel: '1212543243817058394'
+  })
+</script>
+
+<link rel="icon" href="/assets/brunysixlgiflogo.gif">
+  <meta property="og:title" content="brunysixl. | Arcade.">
+  <meta name="theme-color" content="#724bf2">
+  <meta name="msapplication-TileColor" content="#724bf2">
+  <meta property="og:image" content="/assets/brunysixlgiflogo.gif">
+  <meta name="description" content="brunysixl. find everything you wanna do at home at school.">
+  <meta property="og:description" content="brunysixl. find everything you wanna do at home at school.">
