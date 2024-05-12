@@ -17,7 +17,7 @@ Welcome to my repository of unblocked games! This collection is dedicated to pro
 Feel free to explore and have fun gaming!
 
 ## brunysixl creators
-- Brunys (owner)
+- Brunys (owner) (head developer)
 - Cr4cked (main deveploper) (co owner)
 - synrub33 (main developer) (game finder)
 - Zynax (developer)
