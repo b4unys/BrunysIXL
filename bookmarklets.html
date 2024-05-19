@@ -1,0 +1,92 @@
+<title>IXL | Mathematics</title>
+<link rel="icon" href="/assets/imgs/brunysixlfavicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/imgs/brunysixlfavicon.png" type="image/x-icon">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="/css/brunysixl.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/"><img src="/assets/imgs/brunysixlgiflogo.gif" alt="brunysixl" class="logo"></a>
+        </div>
+        <div class="navbar-right">
+            <a href="/arcade.html" class="nav-link">Arcade</a>
+            <a href="/emulators.html" class="nav-link">Emulators</a>
+            <a href="/apps.html" class="nav-link">Apps</a>
+            <a href="/bookmarklets.html" class="nav-link">Bookmarklets</a>
+            <a href="/proxy.html" class="nav-link">Proxy</a>
+            <a href="/extra.html" class="nav-link">Extra</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1 class="glowing-text">BrunysIXL</h1>
+        <h5>Our Bookmarklets Using JS in real time!</h5>
+	<hr>
+	
+           <h3>Add this site to your favorites/bookmarks, then change the link with the bookmark code you want</h3>
+    <hr>
+    <h3>Auto-Clicker</h3>
+    <h5>javascript:var DELAY = 1;var autoClickerStyleElement = document.createElement('style'); autoClickerStyleElement.innerHTML='*{cursor: crosshair !important;}'; document.body.appendChild(autoClickerStyleElement); function addClicker(e){if(!e.isTrusted){return;} if(e.target.classList.contains('auto-clicker-target')){ e.target.classList.remove('auto-clicker-target'); }else{ e.target.classList.add('auto-clicker-target'); } document.body.removeChild(autoClickerStyleElement); document.body.removeEventListener('click', addClicker); e.preventDefault(); autoClick(e.target); } function autoClick(element){ if(element.classList.contains('auto-clicker-target')){ element.click(); setTimeout(function(){autoClick(element);}, DELAY); } } document.body.addEventListener('click', addClicker, 0);
+  </h5>
+    <hr>
+    <h3>Tab Cloaker</h3>
+    <h5>javascript:(function() {var l = document.querySelector("link[rel*='icon']") || document.createElement('link');l.type = 'image/x-icon';l.rel = 'shortcut icon';l.href = 'https://user-images.githubusercontent.com/130446887/236898756-c8e32bc6-6a26-4f57-bfcb-5e054b62021e.png';document.getElementsByTagName('head')[0].appendChild(l);document.title = 'Google Docs';})();</h5>
+      <hr>
+    <h3>YouTube Ad Skipper</h3>
+    <h5>if(document.getElementsByClassName("video-ads")[0].innerHTML !==""){ var banner = false; for(var i = 0; i &lt; document.getElementsByClassName("ytp-ad-overlay-close-button").length; i++){ document.getElementsByClassName("ytp-ad-overlay-close-button")[i].click(); banner = true;} if(banner === false){ document.getElementsByClassName("html5-main-video")[0].currentTime = document.getElementsByClassName("html5-main-video")[0].duration; document.getElementsByClassName("ytp-ad-skip-button")[0].click();} }void 0;</h5>
+  
+        
+         <hr>
+     <a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter7.optistats.ovh/private/freecounterstat.php?c=cx88tzmqauk43lts3flwb7zql1tqg946" border="0" title="web counter" alt="web counter"></a>
+    
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-brunysixl.js"></script>
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '1212536662043791450',
+    channel: '1212543243817058394'
+  })
+</script>
+
+<link rel="icon" href="/assets/imgs/brunysixlgiflogo.gif">
+  <meta property="og:title" content="brunysixl. | Bookmarklets.">
+  <meta name="theme-color" content="#724bf2">
+  <meta name="msapplication-TileColor" content="#724bf2">
+  <meta property="og:image" content="/assets/imgs/brunysixlgiflogo.gif">
+  <meta name="description" content="useful, trust me!! click to use now!">
+  <meta property="og:description" content="useful, trust me!! click to use now!">

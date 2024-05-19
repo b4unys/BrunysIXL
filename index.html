@@ -1,0 +1,116 @@
+<title>IXL | Dashboard</title>
+<link rel="icon" href="/assets/imgs/brunysixlfavicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/imgs/brunysixlfavicon.png" type="image/x-icon">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="/css/brunysixl.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="/"><img src="/assets/imgs/brunysixlgiflogo.gif" alt="brunysixl" class="logo"></a>
+        </div>
+        <div class="navbar-right">
+            <a href="/arcade.html" class="nav-link">Arcade</a>
+            <a href="/emulators.html" class="nav-link">Emulators</a>
+            <a href="/apps.html" class="nav-link">Apps</a>
+            <a href="/bookmarklets.html" class="nav-link">Bookmarklets</a>
+            <a href="/proxy.html" class="nav-link">Proxy</a>
+            <a href="/extra.html" class="nav-link">Extra</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1 class="glowing-text">BrunysIXL</h1>
+        <h5>MOTD: this goes hard on 20% volume 🙏 -exodus</h5>
+
+             <button class="blank-button" onclick="openGame()">Open About:Blank Version</button>
+        <script>
+      var urlObj = new window.URL(window.location.href);
+        var url = window.location;
+        
+        if (url) {
+            var win;
+        
+            document.querySelector('button').onclick = function() {
+                if (win) {
+                    win.focus();
+                } else {
+                    win = window.open();
+                    win.document.body.style.margin = '0';
+                    win.document.body.style.height = '100vh';
+                    var iframe = win.document.createElement('iframe');
+                    iframe.style.border = 'none';
+                    iframe.style.width = '100%';
+                    iframe.style.height = '100%';
+                    iframe.style.margin = '0';
+                    iframe.src = url;
+                    win.document.body.appendChild(iframe);
+                    window.location.replace("https://ixl.com");
+        
+                    var interval = setInterval(function() {
+                        if (win.closed) {
+                            clearInterval(interval);
+                            win = undefined;
+        
+                        }
+                    }, 500);
+        
+        
+                }
+            };
+        }
+        </script>
+        
+         <hr>
+     <a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter7.optistats.ovh/private/freecounterstat.php?c=cx88tzmqauk43lts3flwb7zql1tqg946" border="0" title="web counter" alt="web counter"></a>
+    
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles-brunysixl.js"></script>
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+  new Crate({
+    server: '1212536662043791450',
+    channel: '1212543243817058394'
+  })
+</script>
+
+<link rel="icon" href="/assets/imgs/brunysixlgiflogo.gif">
+  <meta property="og:title" content="brunysixl.">
+  <meta name="theme-color" content="#724bf2">
+  <meta name="msapplication-TileColor" content="#724bf2">
+  <meta property="og:image" content="/assets/imgs/brunysixlgiflogo.gif">
+  <meta name="description" content="brunysixl. find everything you wanna do at home at school.">
+  <meta property="og:description" content="brunysixl. find everything you wanna do at home at school.">
