@@ -106,17 +106,22 @@
 		text-align: center;
 	}
 
-   .partner {
+   .container {
+        display: flex;
+        gap: 10px; 
+    }
+    .partner {
         position: relative;
-        width: 300px;
-        height: 150px;
+        width: 400px;
+        height: 100px;
         overflow: hidden;
-        border-radius: 10px;
-        background-color: #ddd;
+        border-radius: 10px; 
+        background-color: #ddd; 
+        flex-shrink: 0; 
     }
     .partner img {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -144,6 +149,6 @@
         opacity: 1;
     }
     .overlay a {
-        color: #000;
+        color: #fff;
         text-decoration: none;
     }
