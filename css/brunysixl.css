@@ -36,6 +36,7 @@
             height: 50px;
             margin-right: 20px;
             transition: transform 0.3s ease;
+	    border-radius: 20px;
         }
 
         .logo:hover {
