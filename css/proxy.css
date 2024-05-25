@@ -9,24 +9,26 @@
         z-index: 0;
      }
         .navbar {
-            position: fixed;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 70%;
-	    height: 40px;
-            max-width: 1200px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #030303; 
-            color: white;
-            padding: 10px 20px;
-            z-index: 1000;
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-	    border: 1px solid #fff;
-        }
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 40px;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #030303; 
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
 
         .navbar-left {
             display: flex;
