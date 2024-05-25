@@ -51,12 +51,12 @@
             color: white;
             padding: 10px 15px;
             transition: background-color 0.3s ease;
+       	    border-radius: 10px;
         }
 
         .nav-link:hover {
-            background-color: #555;
+            background-color: #141414;
         }
-
         .content {
             padding-top: 70px;
             text-align: center;
