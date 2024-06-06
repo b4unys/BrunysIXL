@@ -4,7 +4,7 @@ Welcome to my repository of unblocked games! This collection is dedicated to pro
 
 ## Support Us!
 
-1. JOIN THE DISCORD!: https://discord.gg/a78geXJG8Z
+1. JOIN THE DISCORD!: [discord lmao](https://discord.gg/rb4MczbacE)
 2. SUBSCRIBE TO THE YOUTUBE!: https://www.youtube.com/@b4uny
 
 ## BEST FEATURES!
